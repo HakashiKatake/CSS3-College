@@ -4,6 +4,7 @@ body {
     color: black;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzhzZ3c2bWJldW9sa3pjaGVuNGF3djNjYWp6cXIxczY3Nzljbmt6NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FlodpfQUBSp20/giphy.gif);
 }
 
 .container {
