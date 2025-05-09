@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dev Handbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>📗 Student Dev Handbook</h1>
+    
+    <!-- All details have the same name to create accordion behavior -->
+    <details name="notes">
+        <summary>What is HTML?</summary>
+        <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It describes the structure of a web page semantically and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages and are represented by tags like <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;</code>, etc.</p>
+    </details>
+    
+    <details name="notes">
+        <summary>What is a Semantic Tag?</summary>
+        <p>Semantic tags like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;header&gt;</code>, and <code>&lt;footer&gt;</code> convey meaning and structure to your content. They help browsers, search engines, and assistive technologies better understand the purpose of different parts of your webpage, improving accessibility and SEO.</p>
+    </details>
+    
+    <details name="notes">
+        <summary>Difference Between id and class</summary>
+        <p>In HTML and CSS:
+            <ul>
+                <li><strong>id</strong>: Must be unique on a page, can only be used once. Referenced with # in CSS.</li>
+                <li><strong>class</strong>: Can be reused multiple times on a page. Referenced with . in CSS.</li>
+                <li>An element can have multiple classes but only one id.</li>
+                <li>ids have higher specificity than classes in CSS.</li>
+            </ul>
+        </p>
+    </details>
+    
+    <details name="notes">
+        <summary>What is a &lt;summary&gt; Element?</summary>
+        <p>The <code>&lt;summary&gt;</code> element is used as a visible heading for its parent <code>&lt;details&gt;</code> element. It shows a disclosure widget that the user can click to show/hide the content. It's particularly useful for creating expandable/collapsible sections like FAQs, accordions, or info sections as demonstrated in this handbook.</p>
+    </details>
+    
+    <details name="notes">
+        <summary>What is CSS?</summary>
+        <p>CSS (Cascading Style Sheets) is a styling language used to describe the presentation of HTML documents. It controls layout, colors, fonts, and responsive design. CSS can be applied in three ways:
+            <ul>
+                <li><strong>Inline</strong>: Using the style attribute directly in HTML elements</li>
+                <li><strong>Internal</strong>: Using the <code>&lt;style&gt;</code> tag in the document head</li>
+                <li><strong>External</strong>: Linking to an external .css file with <code>&lt;link&gt;</code> tag</li>
+            </ul>
+        </p>
+    </details>
+</body>
+</html>

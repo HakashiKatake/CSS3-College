@@ -1,0 +1,99 @@
+
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1688c0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Details Styling */
+details {
+    margin-bottom: 15px;
+    background: lightblue;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px solid black;
+    text-align: left;
+}
+
+details[open] {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Summary Styling */
+summary {
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    outline: none;
+    list-style: none;
+    position: relative;
+    padding-left: 40px;
+}
+
+/* Remove default arrow */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Custom arrow using ::before */
+summary::before {
+    content: "▶";
+    position: absolute;
+    left: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Rotate arrow when opened */
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+summary:hover {
+    background-color: #3d8b40;
+}
+
+/* Content Styling */
+details p, details ul {
+    padding: 15px 20px;
+    margin: 0;
+    color: black;
+}
+
+/* List styling */
+details ul {
+    margin-left: 20px;
+}
+
+details li {
+    margin-bottom: 8px;
+}
+
+/* Strong text in lists */
+details strong {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+code {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-family: Consolas, monospace;
+}

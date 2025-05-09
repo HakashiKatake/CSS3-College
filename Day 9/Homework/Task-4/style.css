@@ -1,0 +1,173 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #117b40;
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    background-color: rgb(25, 161, 125);
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: white;
+}
+
+section > h2 {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Task 1: Style a Simple Profile Card */
+.card {
+    background-color: lightgray;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color: black;
+}
+
+#name {
+    color: darkblue;
+}
+
+.bio {
+    font-style: italic;
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Task 2: Navigation Menu Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+nav li:first-child a {
+    background-color: #4CAF50;
+}
+
+/* Task 3: Form Field Focus */
+form {
+    margin-bottom: 30px;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 8px 0 15px;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: blue;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+input[type="email"] {
+    background-color: #f8f8f8;
+}
+
+/* Task 4: Use Pseudo-elements */
+article {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h3::before {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: red;
+    margin-bottom: 8px;
+}
+
+article p::first-line {
+    text-transform: uppercase;
+}
+
+article p::before {
+    content: "★ ";
+    color: blue;
+}
+
+/* Task 5: Advanced Targeting */
+.blog h3 {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.blog article:nth-child(3) p {
+    color: purple;
+}
+
+.blog article:nth-child(4) {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-left: 4px solid #4CAF50;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    section {
+        padding: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+}
